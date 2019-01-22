@@ -1,0 +1,19 @@
+{
+    "name": "starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss css/style.css -w",
+        "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+        "final:css": "npm-run-all compile:sass prefix:css"
+    },
+    "author": "hemant",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^8.4.1",
+        "node-sass": "^4.8.3",
+        "npm-run-all": "^4.1.2",
+        "postcss-cli": "^5.0.0"
+    }
+}

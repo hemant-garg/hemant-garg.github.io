@@ -1,0 +1,28 @@
+.button {
+  padding: 1.3rem 2.2rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 4rem;
+  margin: 0 .5rem;
+  transition: all .3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0.3rem 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.3); }
+  .button:focus, .button:active {
+    outline: none; }
+  .button:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0.3rem 0.6rem 1.5rem 0 rgba(0, 0, 0, 0.5); }
+  .button i {
+    animation: Rotate 3s linear infinite;
+    margin-left: 1.4rem;
+    display: inline-block; }
+
+@keyframes Rotate {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
