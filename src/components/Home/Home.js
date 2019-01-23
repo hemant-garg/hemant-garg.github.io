@@ -13,14 +13,14 @@ class Home extends React.Component {
 		window.location = window.location.origin + '/projects';
 	}
 	goToResume(){
-		window.location='https://drive.google.com/file/d/1XCwA5PbnZKjVrhR7zJquiLpUmrkRcwdO/view';
+		window.open('https://drive.google.com/file/d/1XCwA5PbnZKjVrhR7zJquiLpUmrkRcwdO/view');
 	}
 
 	render(){
 		return(
 			<main className="Home">
 				
-				<MyPhoto logo={Logo}/>
+				<MyPhoto logo={Logo} width={"27rem"}/>
 				<h1 className="my-name">Hemant Garg</h1>
 				<h3 className="my-tagline">A Full Stack Web Developer who plays Guitar </h3>
 				<div style={{display:'flex', justifyContent: 'center'}}>
