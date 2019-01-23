@@ -1,10 +1,10 @@
 import React from "react";
 import './Button.css';
-const Button = ({text, color, iconClass, onclick, animation, border}) => {
+const Button = ({text, color, iconClass, onclick, delay, border}) => {
     const buttonStyle={
-        animation: animation,
         borderRadius: border,
-        backgroundColor: color
+        backgroundColor: color,
+        animationDelay: delay + 's'
     }
 	return(
 		<button onClick={onclick} className="button" style={buttonStyle}>

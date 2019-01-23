@@ -20,13 +20,13 @@ class Home extends React.Component {
 			<main className="Home">
 				
 				<MyPhoto logo={Logo} width={"27rem"} height={'27rem'}/>
-				<h1 className="my-name">Hemant Garg</h1>
-				<h3 className="my-tagline">A Full Stack Web Developer who plays Guitar </h3>
+				<h1 className="my-name" style={{animationDelay: 1.5 + 's'}} >Hemant Garg</h1>
+				<h3 className="my-tagline" style={{animationDelay: 2 + 's'}}>A Full Stack Web Developer who plays Guitar </h3>
 				<div style={{display:'flex', justifyContent: 'center'}}>
 					<Link to="/projects">
-						<Button color="#6D214F" text="PROJECTS" iconClass = "fas fa-briefcase" />
+						<Button delay="2.5" color="#6D214F" text="PROJECTS" iconClass = "fas fa-briefcase" />
 					</Link>
-					<Button onclick={this.goToResume} color="#b71540" text="RESUME" iconClass = "fas fa-location-arrow" />
+					<Button delay="2.8" onclick={this.goToResume} color="#b71540" text="RESUME" iconClass = "fas fa-location-arrow" />
 				</div>	
 				<div className="social-link-container">
 					<LinkList />

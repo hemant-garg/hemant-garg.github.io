@@ -42,8 +42,8 @@ class Projects extends React.Component {
 							 })
 						 } 
 					</p>
-					<Button onclick={() => window.open(project.repo)} border={'.5rem'} color="#006266" text="REPO" iconClass = "fas fa-file-code" />
-					<Button onclick={() => window.open(project.website)} border={'.5rem'} color="#2980b9" text="LIVE" iconClass = "fas fa-desktop" />
+					<Button delay="0.3" onclick={() => window.open(project.repo)} border={'.5rem'} color="#006266" text="REPO" iconClass = "fas fa-file-code" />
+					<Button delay="0.6" onclick={() => window.open(project.website)} border={'.5rem'} color="#2980b9" text="LIVE" iconClass = "fas fa-desktop" />
 					</div>
 				</div>
 			)
@@ -56,12 +56,12 @@ class Projects extends React.Component {
 			<main className="Projects" style={{paddingTop: 12+'rem'}}>
 				{this.renderModalData()}
 				<h1 className="my-name">Recent Projects</h1>
-				<h3 className="my-tagline">( <i className="fas fa-hand-point-down"></i> click for more info  <i className="far fa-smile-wink"></i> )</h3>
+				<h3 className="my-tagline" style={{animationDelay: 0.5 + 's'}}>( <i className="fas fa-hand-point-down"></i> click for more info  <i className="far fa-smile-wink"></i> )</h3>
 				<div className="project-list">
-					<MyPhoto text="MAILZY" gradient="rgba(0, 98, 102, .6)" onclick={() => this.showModal(0)} logo={Logo}/>
-					<MyPhoto text="eCell MSIT" gradient="rgba(237, 76, 103, .6)" onclick={() => this.showModal(1)} logo={Logo}/>
-					<MyPhoto text="Youtube Mini" gradient="rgba(27, 20, 100, .6)" onclick={() => this.showModal(2)} logo={Logo}/>
-					<MyPhoto text="Face Scanner" gradient="rgba(234, 32, 39, .6)" onclick={() => this.showModal(3)} logo={Logo}/>
+					<MyPhoto text="MAILZY" gradient="rgba(0, 98, 102, .6)" onclick={() => this.showModal(0)} logo={Logo} delay="1" anim="scale-in-center"/>
+					<MyPhoto text="eCell MSIT" gradient="rgba(237, 76, 103, .6)" onclick={() => this.showModal(1)} logo={Logo} delay="1.3" anim="scale-in-center"/>
+					<MyPhoto text="Youtube Mini" gradient="rgba(27, 20, 100, .6)" onclick={() => this.showModal(2)} logo={Logo} delay="1.6" anim="scale-in-center"/>
+					<MyPhoto text="Face Scanner" gradient="rgba(234, 32, 39, .6)" onclick={() => this.showModal(3)} logo={Logo} delay="1.9" anim="scale-in-center"/>
 				</div>
 			</main>
 		)
