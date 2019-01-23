@@ -1,15 +1,19 @@
 .Projects {
   min-height: 100vh;
   background: url("./04.png") no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  padding: 2rem 1rem; }
 
 .project-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   max-width: 105rem;
   margin: 0 auto;
-  margin-top: -2rem;
+  margin-top: 4rem;
   flex-wrap: wrap; }
+  @media (max-width: 500px) {
+    .project-list {
+      font-size: 49%; } }
 
 .project-name {
   color: #fff;
@@ -23,10 +27,11 @@
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 10;
   /* Sit on top */
   left: 0;
   top: 0;
+  padding: 0 3rem;
   width: 100%;
   /* Full width */
   height: 100%;
@@ -46,6 +51,12 @@
   padding: 20px;
   max-width: 90rem;
   border-radius: 1rem; }
+  @media (max-width: 900px) {
+    .modal-content {
+      margin: 20% auto; } }
+  @media (max-width: 600px) {
+    .modal-content {
+      margin: 25% auto; } }
   .modal-content-title {
     font-size: 3rem;
     font-weight: bold;

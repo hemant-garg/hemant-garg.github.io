@@ -24,9 +24,9 @@ class Projects extends React.Component {
 	renderModalData = () => {
 		return PROJECTS.map(project => {
 			return(
-				<div id="myModal" class="modal">
-					<div class="modal-content">
-					<span class="close">&times;</span>
+				<div key={project.name} id="myModal" className="modal">
+					<div className="modal-content">
+					<span className="close">&times;</span>
 					<h1 className="modal-content-title">{project.name}</h1>
 					<p className="modal-content-description">	
 						{project.desp1}
@@ -38,7 +38,7 @@ class Projects extends React.Component {
 						 Skills that I've used: <br/>
 						 {
 							 project.tech.map(t => {
-								return <span>{t}</span>
+								return <span key={t}>{t}</span>
 							 })
 						 } 
 					</p>
@@ -51,16 +51,17 @@ class Projects extends React.Component {
 	}
 
 	render(){
+		
 		return(
 			<main className="Projects" style={{paddingTop: 12+'rem'}}>
 				{this.renderModalData()}
 				<h1 className="my-name">Recent Projects</h1>
-				<h3 className="my-tagline">( <i class="fas fa-hand-point-down"></i> click for more info  <i class="far fa-smile-wink"></i> )</h3>
+				<h3 className="my-tagline">( <i className="fas fa-hand-point-down"></i> click for more info  <i className="far fa-smile-wink"></i> )</h3>
 				<div className="project-list">
-					<MyPhoto text="MAILZY" gradient="rgba(0, 98, 102, .6)" onclick={() => this.showModal(0)} logo={Logo} width={"20rem"}/>
-					<MyPhoto text="eCell MSIT" gradient="rgba(237, 76, 103, .6)" onclick={() => this.showModal(1)} logo={Logo} width={"20rem"}/>
-					<MyPhoto text="Youtube Mini" gradient="rgba(27, 20, 100, .6)" onclick={() => this.showModal(2)} logo={Logo} width={"20rem"}/>
-					<MyPhoto text="Face Scanner" gradient="rgba(234, 32, 39, .6)" onclick={() => this.showModal(3)} logo={Logo} width={"20rem"}/>
+					<MyPhoto text="MAILZY" gradient="rgba(0, 98, 102, .6)" onclick={() => this.showModal(0)} logo={Logo}/>
+					<MyPhoto text="eCell MSIT" gradient="rgba(237, 76, 103, .6)" onclick={() => this.showModal(1)} logo={Logo}/>
+					<MyPhoto text="Youtube Mini" gradient="rgba(27, 20, 100, .6)" onclick={() => this.showModal(2)} logo={Logo}/>
+					<MyPhoto text="Face Scanner" gradient="rgba(234, 32, 39, .6)" onclick={() => this.showModal(3)} logo={Logo}/>
 				</div>
 			</main>
 		)

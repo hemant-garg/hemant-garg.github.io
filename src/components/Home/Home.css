@@ -3,19 +3,29 @@
   background: url("./back.png") no-repeat;
   background-size: cover;
   min-height: 100vh;
-  padding-bottom: 5rem; }
+  padding: 7rem 2rem 2rem 2rem; }
+  @media (max-width: 500px) {
+    .Home {
+      padding: 11rem 2rem 2rem 2rem; } }
 
 .header-link {
   position: absolute;
   text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
   top: 3rem;
   left: 5rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #444;
   text-decoration: none;
+  font-weight: lighter;
   font-family: 'Montserrat', sans-serif; }
   .header-link span {
-    font-weight: bold; }
+    font-weight: 600; }
+  @media (max-width: 700px) {
+    .header-link {
+      left: 3rem; } }
+  @media (max-width: 500px) {
+    .header-link {
+      font-size: 3.2rem; } }
 
 .my-name {
   font-family: 'Luckiest Guy', cursive;
@@ -23,10 +33,13 @@
   font-size: 5rem;
   text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.1);
   font-weight: 300;
-  margin-top: 1rem;
+  margin-top: 3rem;
   color: #444;
   letter-spacing: .4rem;
   text-align: center; }
+  @media (max-width: 600px) {
+    .my-name {
+      margin-top: 4rem; } }
 
 .my-tagline {
   text-align: center;
@@ -43,3 +56,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column; }
+  @media (max-width: 900px) {
+    .social-link-container {
+      flex-direction: row;
+      position: static;
+      margin-top: 6rem;
+      width: 100%;
+      height: auto; } }

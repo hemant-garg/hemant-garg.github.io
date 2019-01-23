@@ -2,8 +2,8 @@ import React from "react";
 import Tilt from 'react-tilt';
 import './MyPhoto.css';
 
-const MyPhoto = ({logo, width, onclick, text, gradient}) => {
-	const tiltstyle = {width}
+const MyPhoto = ({logo, width, height, onclick, text, gradient}) => {
+	const tiltstyle = {width, height}
 	const gradientStyle= {
 		background: gradient
 	}
