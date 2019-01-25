@@ -6,6 +6,7 @@
   padding: 7rem 2rem 2rem 2rem; }
   @media (max-width: 500px) {
     .Home {
+      background: url("./back.png") no-repeat right bottom;
       padding: 11rem 2rem 2rem 2rem; } }
 
 .header-link {

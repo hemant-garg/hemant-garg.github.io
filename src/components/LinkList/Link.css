@@ -6,12 +6,6 @@
   border-radius: 50%;
   box-shadow: 0.5rem 0.5rem 2.5rem 0 rgba(0, 0, 0, 0.4);
   animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-  .social-link-item:nth-of-type(2) {
-    animation-delay: .4s; }
-  .social-link-item:nth-of-type(3) {
-    animation-delay: .8s; }
-  .social-link-item:nth-of-type(4) {
-    animation-delay: 1.2s; }
   @media (max-width: 900px) {
     .social-link-item {
       display: inline;
@@ -19,6 +13,15 @@
   @media (max-width: 500px) {
     .social-link-item {
       margin: 1rem; } }
+  .social-link-item:nth-of-type(2) {
+    animation-delay: .4s; }
+    @media (max-width: 900px) {
+      .social-link-item:nth-of-type(2) {
+        padding: 1.5rem 2.2rem 1.1rem 2.2rem; } }
+  .social-link-item:nth-of-type(3) {
+    animation-delay: .8s; }
+  .social-link-item:nth-of-type(4) {
+    animation-delay: 1.2s; }
 
 .social-link {
   text-decoration: none;

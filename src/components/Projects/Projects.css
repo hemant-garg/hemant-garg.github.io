@@ -3,6 +3,9 @@
   background: url("./04.png") no-repeat center center;
   background-size: cover;
   padding: 2rem 1rem; }
+  @media (max-width: 500px) {
+    .Projects {
+      background: url("./03.png") no-repeat right bottom; } }
 
 .project-list {
   display: flex;
@@ -50,7 +53,8 @@
   margin: 10% auto;
   padding: 20px;
   max-width: 90rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
   @media (max-width: 900px) {
     .modal-content {
       margin: 20% auto; } }
@@ -92,3 +96,11 @@
   color: black;
   text-decoration: none;
   cursor: pointer; }
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
