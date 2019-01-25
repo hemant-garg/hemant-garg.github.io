@@ -12,7 +12,7 @@ class Home extends React.Component {
 
 	
 	goToResume(){
-		window.open('https://drive.google.com/file/d/1XCwA5PbnZKjVrhR7zJquiLpUmrkRcwdO/view');
+		window.open('https://drive.google.com/file/d/1Ioo714e2JiJ7-C4vocFjmcdA6HmiXjdD/view');
 	}
 
 	render(){

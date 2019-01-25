@@ -11,8 +11,7 @@
   margin: 0 .5rem;
   transition: all .3s ease;
   letter-spacing: 1px;
-  box-shadow: 0.3rem 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.3);
-  animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+  box-shadow: 0.3rem 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.3); }
   .button:focus, .button:active {
     outline: none; }
   .button:hover {
@@ -22,17 +21,3 @@
     animation: Rotate 3s linear infinite;
     margin-left: 1.4rem;
     display: inline-block; }
-
-@keyframes Rotate {
-  from {
-    transform: rotateZ(0deg); }
-  to {
-    transform: rotateZ(360deg); } }
-
-@keyframes fade-in-fwd {
-  0% {
-    transform: translateZ(-100px);
-    opacity: 0; }
-  100% {
-    transform: translateZ(0);
-    opacity: 1; } }

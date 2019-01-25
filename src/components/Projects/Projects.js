@@ -79,16 +79,16 @@ const PROJECTS = [
 	},
 	{
 		name: 'Entrepreneurship Cell of MSIT',
-		desp1: 'I have created an amazing website completely from scratch for eCell MSIT. ',
-		desp2: 'Solely responsible for further website management.',
+		desp1: 'The official website of the Entrepreneurship Cell of MSIT. ',
+		desp2: 'I’ve used MERN stack ( mongoDB, expressjs, reactjs, nodejs ) for the development of the website. Students can register themselves and their data will be stored in the database (mlab). I have also applied some SVG animations for the first time.',
 		repo: 'https://github.com/hemant-garg/ecellmsit2019',
 		website: 'https://hemant-garg.github.io/ecellmsit2019/',
 		tech: ['Adobe Illustrator', 'HTML5', 'CSS3', 'sass', 'reactjs', 'react-router', 'disqus', 'wordpress-api', 'nodejs', 'expressjs', 'mongoDB', 'mlab', 'mongooose', 'npm']
 	},
 	{
 		name: 'Youtube Mini',
-		desp1: 'A simple Website which shows five videos based upon users search',
-		desp2: '',
+		desp1: 'A simple React Website which shows five videos based upon the users search',
+		desp2: ' I have used Youtube API for the data.',
 		repo: 'https://github.com/hemant-garg/youtube-mini',
 		website: 'https://hemant-garg.github.io/youtube-mini/',
 		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'youtube-api']
