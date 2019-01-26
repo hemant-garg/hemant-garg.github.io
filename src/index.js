@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import reduxThunk from "redux-thunk";
 import { createStore, applyMiddleware } from "redux";
-import registerServiceWorker from "./registerServiceWorker";
+// import registerServiceWorker from "./registerServiceWorker";
 import reducers from "./reducers";
 import App from "./components/App";
 import "./style.css";
@@ -17,4 +17,4 @@ ReactDOM.render(
 	document.getElementById("root")
 );
 
-registerServiceWorker();
+// registerServiceWorker();

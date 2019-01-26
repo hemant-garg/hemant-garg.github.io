@@ -82,7 +82,7 @@ const PROJECTS = [
 		desp1: 'The official website of the Entrepreneurship Cell of MSIT. ',
 		desp2: 'I’ve used MERN stack ( mongoDB, expressjs, reactjs, nodejs ) for the development of the website. Students can register themselves and their data will be stored in the database (mlab). I have also applied some SVG animations for the first time.',
 		repo: 'https://github.com/hemant-garg/ecellmsit2019',
-		website: 'https://hemant-garg.github.io/ecellmsit2019/',
+		website: 'https://ecellmsit.netlify.com/',
 		tech: ['Adobe Illustrator', 'HTML5', 'CSS3', 'sass', 'reactjs', 'react-router', 'disqus', 'wordpress-api', 'nodejs', 'expressjs', 'mongoDB', 'mlab', 'mongooose', 'npm']
 	},
 	{
@@ -90,7 +90,7 @@ const PROJECTS = [
 		desp1: 'A simple React Website which shows five videos based upon the users search',
 		desp2: ' I have used Youtube API for the data.',
 		repo: 'https://github.com/hemant-garg/youtube-mini',
-		website: 'https://hemant-garg.github.io/youtube-mini/',
+		website: 'https://youtube-mini.netlify.com/',
 		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'youtube-api']
 	},
 	{
@@ -98,7 +98,7 @@ const PROJECTS = [
 		desp1: 'This App analyzes images and returns information on age, gender, and multicultural appearance for each detected face based on facial characteristics.',
 		desp2: 'API used - Clarifai ( Demographic Model )',
 		repo: 'https://github.com/hemant-garg/face-scanner',
-		website: 'https://hemant-garg.github.io/face-scanner/',
+		website: 'https://face-scanner.netlify.com/',
 		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'Clarifai API']
 	},
 ];
