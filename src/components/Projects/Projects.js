@@ -82,7 +82,7 @@ const PROJECTS = [
 		desp1: 'The official website of the Entrepreneurship Cell of MSIT. ',
 		desp2: 'I’ve used MERN stack ( mongoDB, expressjs, reactjs, nodejs ) for the development of the website. Students can register themselves and their data will be stored in the database (mlab). I have also applied some SVG animations for the first time.',
 		repo: 'https://github.com/hemant-garg/ecellmsit2019',
-		website: 'https://ecellmsit.netlify.com/',
+		website: 'https://www.ecellmsit.in/',
 		tech: ['Adobe Illustrator', 'HTML5', 'CSS3', 'sass', 'reactjs', 'react-router', 'disqus', 'wordpress-api', 'nodejs', 'expressjs', 'mongoDB', 'mlab', 'mongooose', 'npm']
 	},
 	{
