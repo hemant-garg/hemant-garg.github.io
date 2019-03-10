@@ -2,7 +2,11 @@
   "name": "hemant-garg.github.io",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "https://hemantgarg.me/",
+=======
+  "homepage": "https://hemantgarg.me",
+>>>>>>> f026d6c9b6ed81c5b589d378d643347174b1068f
   "dependencies": {
     "node-sass-chokidar": "^1.3.3",
     "npm-run-all": "^4.1.3",
