@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html,
+body {
+  font-size: 62.5%; }
+  @media (max-width: 900px) {
+    html,
+    body {
+      font-size: 56%; } }
+  @media (max-width: 700px) {
+    html,
+    body {
+      font-size: 55%; } }
+  @media (max-width: 550px) {
+    html,
+    body {
+      font-size: 51%; } }
+  @media (max-width: 500px) {
+    html,
+    body {
+      font-size: 49%; } }
