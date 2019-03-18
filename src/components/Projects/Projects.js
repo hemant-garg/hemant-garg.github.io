@@ -1,4 +1,6 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 import MyPhoto from '../MyPhoto/MyPhoto';
 import Button from '../Button/Button';
 import Logo from './hemant garg.png';
@@ -54,6 +56,12 @@ class Projects extends React.Component {
 		
 		return(
 			<main className="Projects" style={{paddingTop: 12+'rem'}}>
+			 <Helmet>
+          <meta charSet="utf-8" />
+          <title>Hemant Garg | Projects</title>
+          <meta name="description" content="The List of Projects that I have done recently. Please have a look :) " />
+          <meta name="keywords" content="React Projects, eCell MSIT, ecell, esummit, social network for developers, face scanner reactjs, youtube mini reactjs, mailzy, stephen grider nodejs course, Brad Traversy MERN stack course, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6" />
+        </Helmet>
 				{this.renderModalData()}
 				<h1 className="my-name">Recent Projects</h1>
 				<h3 className="my-tagline" style={{animationDelay: 0.5 + 's'}}>( <i className="fas fa-hand-point-down"></i> click for more info  <i className="far fa-smile-wink"></i> )</h3>

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 import MyPhoto from "../MyPhoto/MyPhoto";
 import Button from "../Button/Button";
 import LinkList from "../LinkList/LinkList";
@@ -16,6 +18,14 @@ class Home extends React.Component {
   render() {
     return (
       <main className="Home">
+
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Hemant Garg</title>
+          <meta name="description" content="A Full Stack Web Developer who plays Guitar. Pursuing B.Tech in the field of computer science from Maharaja Surajmal Institue of Technology. " />
+          <meta name="keywords" content="Hemant, Hemant Garg, Web Developer, MERN Stack, Hemant Garg Web Developer, MERN stack developer, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6" />
+        </Helmet>
+
         <MyPhoto logo={Logo} width={"27rem"} height={"27rem"} />
         <h1 className="my-name" style={{ animationDelay: 1.5 + "s" }}>
           Hemant Garg
