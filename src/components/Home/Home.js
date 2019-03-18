@@ -9,7 +9,7 @@ import "./Home.css";
 class Home extends React.Component {
   goToResume() {
     window.open(
-      "https://drive.google.com/file/d/1PAOnEvstpYvVID3WjKXgNvxtlGTB5GWW/view?usp=sharing"
+      "https://drive.google.com/file/d/1dozy08k4JDdpEMErdOxnwpKDyNZHl-UI/view?usp=sharing"
     );
   }
 
