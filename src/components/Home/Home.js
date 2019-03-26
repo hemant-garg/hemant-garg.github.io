@@ -11,19 +11,24 @@ import "./Home.css";
 class Home extends React.Component {
   goToResume() {
     window.open(
-      "https://drive.google.com/file/d/1dozy08k4JDdpEMErdOxnwpKDyNZHl-UI/view?usp=sharing"
+      "https://drive.google.com/file/d/1q7FuiYNVzGn4nBWbL1uCHJ2Q0_BGlUGA/view?usp=sharing"
     );
   }
 
   render() {
     return (
       <main className="Home">
-
         <Helmet>
           <meta charSet="utf-8" />
           <title>Hemant Garg</title>
-          <meta name="description" content="A Full Stack Web Developer who plays Guitar. Pursuing B.Tech in the field of computer science from Maharaja Surajmal Institue of Technology. " />
-          <meta name="keywords" content="Hemant, Hemant Garg, Web Developer, MERN Stack, Hemant Garg Web Developer, MERN stack developer, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6" />
+          <meta
+            name="description"
+            content="A Full Stack Web Developer who plays Guitar. Pursuing B.Tech in the field of computer science from Maharaja Surajmal Institue of Technology. "
+          />
+          <meta
+            name="keywords"
+            content="Hemant, Hemant Garg, Web Developer, MERN Stack, Hemant Garg Web Developer, MERN stack developer, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6"
+          />
         </Helmet>
 
         <MyPhoto logo={Logo} width={"27rem"} height={"27rem"} />
