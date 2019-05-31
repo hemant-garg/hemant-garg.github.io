@@ -23,3 +23,29 @@ body {
     html,
     body {
       font-size: 49%; } }
+
+.page {
+  position: fixed;
+  top: 0;
+  overflow: scroll;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 1s ease-in-out; }
+
+.page-enter {
+  transform: translate(-100%, 0); }
+
+.page-enter-active {
+  transform: translate(0, 0); }
+
+.page-exit {
+  transform: translate(-100%, 0); }
+
+.page--prev.page-enter {
+  transform: translate(100%, 0); }
+
+.page--prev.page-enter-active {
+  transform: translate(0, 0); }
+
+.page--prev.page-exit {
+  transform: translate(100%, 0); }

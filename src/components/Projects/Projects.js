@@ -1,115 +1,164 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
-import MyPhoto from '../MyPhoto/MyPhoto';
-import Button from '../Button/Button';
-import Logo from './hemant garg.png';
 import './Projects.css';
+import ProjectBox from './ProjectBox';
 
 class Projects extends React.Component {
-	showModal(i){
-		var modal = document.querySelectorAll("#myModal")[i];
-		var span = document.getElementsByClassName("close")[i];
-		console.log(modal)
-		modal.style.display = "block";
-	
-		span.onclick = function() {
-			modal.style.display = "none";
-		}
-		window.onclick = function(event) {
-			if (event.target === modal) {
-				modal.style.display = "none";
-			}
-		}
-	}
+	render() {
+		return (
+			<main className='Projects-section'>
+				<Helmet>
+					<meta charSet='utf-8' />
+					<title>Hemant Garg | Projects</title>
+					<meta
+						name='description'
+						content='The List of Projects that I have done recently. Please have a look :) '
+					/>
+					<meta
+						name='keywords'
+						content='React Projects, eCell MSIT, ecell, esummit, social network for developers, face scanner reactjs, youtube mini reactjs, mailzy, stephen grider nodejs course, Brad Traversy MERN stack course, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6'
+					/>
+				</Helmet>
 
-	renderModalData = () => {
-		return PROJECTS.map(project => {
-			return(
-				<div key={project.name} id="myModal" className="modal">
-					<div className="modal-content">
-					<span className="close">&times;</span>
-					<h1 className="modal-content-title">{project.name}</h1>
-					<p className="modal-content-description">	
-						{project.desp1}
-						<br />
-						{project.desp2}
-						<br />
-					</p>
-					<p className="modal-content-tech">
-						 Skills that I've used: <br/>
-						 {
-							 project.tech.map(t => {
-								return <span key={t}>{t}</span>
-							 })
-						 } 
-					</p>
-					<Button delay="0.3" onclick={() => window.open(project.repo)} border={'.5rem'} color="#006266" text="REPO" iconClass = "fas fa-file-code" />
-					<Button delay="0.6" onclick={() => window.open(project.website)} border={'.5rem'} color="#2980b9" text="LIVE" iconClass = "fas fa-desktop" />
-					</div>
-				</div>
-			)
-		})
-	}
-
-	render(){
-		
-		return(
-			<main className="Projects" style={{paddingTop: 12+'rem'}}>
-			 <Helmet>
-          <meta charSet="utf-8" />
-          <title>Hemant Garg | Projects</title>
-          <meta name="description" content="The List of Projects that I have done recently. Please have a look :) " />
-          <meta name="keywords" content="React Projects, eCell MSIT, ecell, esummit, social network for developers, face scanner reactjs, youtube mini reactjs, mailzy, stephen grider nodejs course, Brad Traversy MERN stack course, Hemant Garg MERN Stack Developer, Full Stack Web Developer, hemant-garg, hemantgarg6" />
-        </Helmet>
-				{this.renderModalData()}
-				<h1 className="my-name">Recent Projects</h1>
-				<h3 className="my-tagline" style={{animationDelay: 0.5 + 's'}}>( <i className="fas fa-hand-point-down"></i> click for more info  <i className="far fa-smile-wink"></i> )</h3>
-				<div className="project-list">
-					<MyPhoto text="MAILZY" gradient="rgba(0, 98, 102, .6)" onclick={() => this.showModal(0)} logo={Logo} delay="1" anim="scale-in-center"/>
-					<MyPhoto text="eCell MSIT" gradient="rgba(237, 76, 103, .6)" onclick={() => this.showModal(1)} logo={Logo} delay="1.3" anim="scale-in-center"/>
-					<MyPhoto text="Youtube Mini" gradient="rgba(27, 20, 100, .6)" onclick={() => this.showModal(2)} logo={Logo} delay="1.6" anim="scale-in-center"/>
-					<MyPhoto text="Face Scanner" gradient="rgba(234, 32, 39, .6)" onclick={() => this.showModal(3)} logo={Logo} delay="1.9" anim="scale-in-center"/>
+				<nav className='projects-nav'>
+					<Link to='/'>&larr; Back</Link>
+				</nav>
+				<div className='projects'>
+					{PROJECTS.map((project) => <ProjectBox project={project} key={project.name} />)}
 				</div>
 			</main>
-		)
+		);
 	}
-};
+}
 
 const PROJECTS = [
 	{
+		name: 'Flat UI Colors',
+		image: 'flatUiColors.png',
+		desp1:
+			"A Simple beautiful looking Clone of website like flatuicolors.com with some extra functionalities i.e. Users can create their own palettes of their favourite colors and They can easily delete some palettes that they don't like.",
+		desp2: 'Want some beautiful colors for next project?? If yes, then you must check this website. Thanks ;)',
+		repo: 'https://github.com/hemant-garg/FlatUIColors',
+		website: 'https://flatuicolors.netlify.com/',
+		tech: [
+			'HTML5',
+			'CSS3',
+			'reactjs',
+			'npm',
+			'chroma-js',
+			'material-ui',
+			'react-router-transition',
+			'react-sortable-hoc'
+		]
+	},
+	{
+		name: 'Social Network for Devs',
+		image: 'socialNetwork.png',
+		desp1:
+			'Social Network website for developers. Create a developer profile/portfolio, share posts and get help from other developers',
+		desp2: 'Its a pretty big website, So please check out the complete information on github repo. Thanks ;)',
+		repo: 'https://github.com/hemant-garg/Social-Network',
+		website: 'https://social-network-v1.herokuapp.com/',
+		tech: [
+			'HTML5',
+			'CSS3',
+			'reactjs',
+			'redux',
+			'moment',
+			'npm',
+			'nodejs',
+			'mongoose',
+			'mongoDB',
+			'expressjs',
+			'passport-jwt',
+			'bcryptjs',
+			'jsonwebtoken'
+		]
+	},
+	{
+		name: 'Portfolio',
+		image: 'portfolio.png',
+		desp1:
+			'Okay So, I have created this simple website for showcasing my recent work. You can call it as my portfolio website.',
+		desp2: "P.S. I know the profile photo is really bad, I'll change that soon. Thanks ;)",
+		repo: 'https://github.com/hemant-garg/hemant-garg.github.io',
+		website: 'http://hemantgarg.me',
+		tech: [ 'HTML5', 'CSS3', 'reactjs', 'npm', 'react-router-transition', 'react-tilt' ]
+	},
+	{
 		name: 'Mailzy',
-		desp1: 'The app that can be used to send mass emails to a big list of users for the purpose of collecting feedback.',
-		desp2: 'If you are running a startup or any kind of business and you want to collect some feedback from your users to expand or improve your business then you can use this web app.',
+		image: 'mailzy.png',
+		desp1:
+			'The app that can be used to send mass emails to a big list of users for the purpose of collecting feedback.',
+		desp2:
+			'If you are running a startup or any kind of business and you want to collect some feedback from your users to expand or improve your business then this website is for you.',
 		repo: 'https://github.com/hemant-garg/mailzy',
 		website: 'https://mailzy.herokuapp.com/',
-		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'react-router', 'redux-form', 'nodejs', 'google-OAuth', 'expressjs', 'mongoDB', 'sendgrid', 'passport', 'stripe', 'mlab', 'mongooose', 'npm']
+		tech: [
+			'HTML5',
+			'CSS3',
+			'reactjs',
+			'redux',
+			'react-router',
+			'redux-form',
+			'nodejs',
+			'google-OAuth',
+			'expressjs',
+			'mongoDB',
+			'sendgrid',
+			'passport',
+			'stripe',
+			'mlab',
+			'mongooose',
+			'npm'
+		]
 	},
 	{
 		name: 'Entrepreneurship Cell of MSIT',
+		image: 'ecellmsit.png',
 		desp1: 'The official website of the Entrepreneurship Cell of MSIT. ',
-		desp2: 'I’ve used MERN stack ( mongoDB, expressjs, reactjs, nodejs ) for the development of the website. Students can register themselves and their data will be stored in the database (mlab). I have also applied some SVG animations for the first time.',
+		desp2:
+			'I’ve used MERN stack ( mongoDB, expressjs, reactjs, nodejs ) for the development of the website. Students can register themselves and their data will be stored in the database (mlab). I have also applied some SVG animations for the first time.',
 		repo: 'https://github.com/hemant-garg/ecellmsit2019',
 		website: 'https://www.ecellmsit.in/',
-		tech: ['Adobe Illustrator', 'HTML5', 'CSS3', 'sass', 'reactjs', 'react-router', 'disqus', 'wordpress-api', 'nodejs', 'expressjs', 'mongoDB', 'mlab', 'mongooose', 'npm']
+		tech: [
+			'Adobe Illustrator',
+			'HTML5',
+			'CSS3',
+			'sass',
+			'reactjs',
+			'react-router',
+			'disqus',
+			'wordpress-api',
+			'nodejs',
+			'expressjs',
+			'mongoDB',
+			'mlab',
+			'mongooose',
+			'npm'
+		]
 	},
 	{
 		name: 'Youtube Mini',
+		image: 'youtubeMini.png',
 		desp1: 'A simple React Website which shows five videos based upon the users search',
 		desp2: ' I have used Youtube API for the data.',
 		repo: 'https://github.com/hemant-garg/youtube-mini',
 		website: 'https://youtube-mini.netlify.com/',
-		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'youtube-api']
+		tech: [ 'HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'youtube-api' ]
 	},
 	{
 		name: 'Face Scanner',
-		desp1: 'This App analyzes images and returns information on age, gender, and multicultural appearance for each detected face based on facial characteristics.',
+		image: 'faceScanner.png',
+		desp1:
+			'This App analyzes images and returns information on age, gender, and multicultural appearance for each detected face based on facial characteristics.',
 		desp2: 'API used - Clarifai ( Demographic Model )',
 		repo: 'https://github.com/hemant-garg/face-scanner',
 		website: 'https://face-scanner.netlify.com/',
-		tech: ['HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'Clarifai API']
-	},
+		tech: [ 'HTML5', 'CSS3', 'reactjs', 'redux', 'npm', 'Clarifai API' ]
+	}
 ];
-
 
 export default Projects;
