@@ -18,6 +18,11 @@ class ProjectBox extends Component {
 		});
 	};
 
+	handleEyeButton = (e) => {
+		e.stopPropagation();
+		window.open(this.props.project.website);
+	};
+
 	handleOutsideModalClick = (e) => {
 		e.stopPropagation();
 		let modal = document.getElementById('myModal');
@@ -64,7 +69,7 @@ class ProjectBox extends Component {
 		return (
 			<div onClick={this.showModal} className='projectBox'>
 				<h1 className='projectBox-name'>{project.name}</h1>
-				<i className='far fa-eye eyeIcon' onClick={() => window.open(project.website)} />
+				<i className='far fa-eye eyeIcon' onClick={this.handleEyeButton} />
 				<div className='projectBox-overlay' />
 				<button className='projectBox-moreBtn'>MORE</button>
 				<img src={require(`./${project.image}`)} />
