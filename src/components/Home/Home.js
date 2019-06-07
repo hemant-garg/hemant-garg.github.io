@@ -10,7 +10,7 @@ import Logo from './hemant garg.jpg';
 import './Home.css';
 class Home extends React.Component {
 	goToResume() {
-		window.open('https://drive.google.com/file/d/1q7FuiYNVzGn4nBWbL1uCHJ2Q0_BGlUGA/view?usp=sharing');
+		window.open('https://drive.google.com/file/d/1yTU-jmWU3NAzO-E_HUczshKxmoGjON66/view?usp=sharing');
 	}
 
 	render() {
