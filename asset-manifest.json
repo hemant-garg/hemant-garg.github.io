@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.7180a874.chunk.css",
-  "main.js": "/static/js/main.051c1393.chunk.js",
-  "main.js.map": "/static/js/main.051c1393.chunk.js.map",
+  "main.css": "/static/css/main.fdfc83a1.chunk.css",
+  "main.js": "/static/js/main.c5e37fd9.chunk.js",
+  "main.js.map": "/static/js/main.c5e37fd9.chunk.js.map",
   "static/js/1.63892ea0.chunk.js": "/static/js/1.63892ea0.chunk.js",
   "static/js/1.63892ea0.chunk.js.map": "/static/js/1.63892ea0.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -12,12 +12,12 @@
   "static/media/flatUiColors.png": "/static/media/flatUiColors.28b9b658.png",
   "static/media/mailzy.png": "/static/media/mailzy.e5f4cae4.png",
   "static/media/portfolio.png": "/static/media/portfolio.26d83c30.png",
-  "static/media/socialNetwork.png": "/static/media/socialNetwork.87934c0f.png",
+  "static/media/socialNetwork.png": "/static/media/socialNetwork.58c2cf36.png",
   "static/media/urlshortener.png": "/static/media/urlshortener.6f720deb.png",
   "static/media/youtubeMini.png": "/static/media/youtubeMini.df988a89.png",
   "static/media/Home.css": "/static/media/back.b41112fc.png",
-  "static/css/main.7180a874.chunk.css.map": "/static/css/main.7180a874.chunk.css.map",
+  "static/css/main.fdfc83a1.chunk.css.map": "/static/css/main.fdfc83a1.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.b9ca8dccf6c489141117e5596eb80b00.js": "/precache-manifest.b9ca8dccf6c489141117e5596eb80b00.js",
+  "precache-manifest.5a350aa07cb103cf7b4ddda1cdf3713c.js": "/precache-manifest.5a350aa07cb103cf7b4ddda1cdf3713c.js",
   "service-worker.js": "/service-worker.js"
 }
